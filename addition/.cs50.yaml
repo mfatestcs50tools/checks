@@ -1,0 +1,14 @@
+check50:
+  files: &myfiles
+      - !exclude "*"
+      - !include "addition.py"
+  checks:
+    Hello Margaret:
+      - run: python3 addition.py # run python3 hello.py
+        stdin: 1 # insert 1 into stdin
+        stdin: 2 # insert 2 into stdin
+        stdout: 3 # expect 3 in stdout
+        exit: 0 # expect program to exit with exitcode 0
+   
+submit50: 
+  files: *myfiles
