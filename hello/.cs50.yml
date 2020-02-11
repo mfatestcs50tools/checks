@@ -1,7 +1,4 @@
 check50:
-  files: &myfiles
-      - !exclude "*"
-      - !include "hello.py"
   checks:
     Hello Margaret:
       - run: python3 hello.py # run python3 hello.py
@@ -14,5 +11,4 @@ check50:
         stdout: Hello Brian # expect Hello Brian in stdout
         exit: 0 # expect program to exit with exitcode 0
 
-submit50: 
-  files: *myfiles
+submit50: true
