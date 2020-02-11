@@ -1,6 +1,6 @@
 check50:
   checks:
-    files: &submit50_files
+    files: &check50_files
     Hello Margaret:
       - run: python3 hello.py # run python3 hello.py
         stdin: Margaret # insert Margaret into stdin
