@@ -5,6 +5,9 @@ check50:
   checks:
     prints 3 for 1 plus 2:
       - run: python3 addition.py # run python3 hello.py
+        stdout: 
+          - a: # prompt for a
+          - b: # prompt for b
         stdin: 
           - 1 # insert 1 into stdin
           - 2 # insert 2 into stdin
