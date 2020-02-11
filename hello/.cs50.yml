@@ -1,8 +1,8 @@
 check50:
   checks:
-    Hello, Margaret!:
+    Hello, Margaret:
       - run: python3 hello.py # run python3 hello.py
         stdin: Margaret # insert Margaret into stdin
-        stdout: Hello, Margaret! # expect Hello, Margaret! in stdout
+        stdout: Hello, Margaret # expect Hello, Margaret in stdout
         exit: 0 # expect program to exit with exitcode 0
 
