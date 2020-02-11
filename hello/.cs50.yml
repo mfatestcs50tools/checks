@@ -11,3 +11,5 @@ check50:
         stdout: Hello Brian # expect Hello Brian in stdout
         exit: 0 # expect program to exit with exitcode 0
 
+submit50:
+  files: *check50_files
