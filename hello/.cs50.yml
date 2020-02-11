@@ -1,6 +1,5 @@
 check50:
   checks:
-    files: &check50_files
     Hello Margaret:
       - run: python3 hello.py # run python3 hello.py
         stdin: Margaret # insert Margaret into stdin
@@ -12,5 +11,4 @@ check50:
         stdout: Hello Brian # expect Hello Brian in stdout
         exit: 0 # expect program to exit with exitcode 0
 
-submit50:
-  files: *check50_files
+submit50: true
