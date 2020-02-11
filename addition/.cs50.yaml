@@ -3,7 +3,7 @@ check50:
       - !exclude "*"
       - !include "addition.py"
   checks:
-    Hello Margaret:
+    prints 3 for 1 plus 2:
       - run: python3 addition.py # run python3 hello.py
         stdin: 1 # insert 1 into stdin
         stdin: 2 # insert 2 into stdin
